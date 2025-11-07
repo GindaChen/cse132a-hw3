@@ -1,0 +1,74 @@
+{
+  "suites": [
+    {
+      "name": "two_relations_independent",
+      "relations": [
+        {
+          "name": "test_0",
+          "input": {
+            "relationName": "R1",
+            "attributes": ["A", "B", "C"]
+          },
+          "sample_data": [
+            { "A": "a1", "B": "b1", "C": "c1" },
+            { "A": "a2", "B": "b2", "C": "c2" },
+            { "A": "a3", "B": "b3", "C": "c3" }
+          ]
+        },
+        {
+          "name": "test_1",
+          "input": {
+            "relationName": "R2",
+            "attributes": ["D", "E", "F"]
+          },
+          "sample_data": [
+            { "D": "d1", "E": "e1", "F": "f1" },
+            { "D": "d2", "E": "e1", "F": "f1" },
+            { "D": "d3", "E": "e2", "F": "f2" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "three_relations_mixed",
+      "relations": [
+        {
+          "name": "test_2",
+          "input": {
+            "relationName": "S1",
+            "attributes": ["A", "B", "C", "D"]
+          },
+          "sample_data": [
+            { "A": "a1", "B": "b1", "C": "c1", "D": "d1" },
+            { "A": "a2", "B": "b2", "C": "c2", "D": "d2" }
+          ]
+        },
+        {
+          "name": "test_3",
+          "input": {
+            "relationName": "S2",
+            "attributes": ["P", "Q", "R"]
+          },
+          "sample_data": [
+            { "P": "p1", "Q": "q1", "R": "r1" },
+            { "P": "p2", "Q": "q2", "R": "r2" },
+            { "P": "p1", "Q": "q1", "R": "r3" }
+          ]
+        },
+        {
+          "name": "test_4",
+          "input": {
+            "relationName": "S3",
+            "attributes": ["X", "Y", "Z"]
+          },
+          "sample_data": [
+            { "X": "x1", "Y": "y1", "Z": "z1" },
+            { "X": "x2", "Y": "y2", "Z": "z2" }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+

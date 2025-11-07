@@ -1,0 +1,142 @@
+{
+  "canonicalization": {
+    "attribute_order": "lex",
+    "relation_order": "lex_by_joined_attributes"
+  },
+  "tests": [
+    {
+      "name": "test_0",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a2", "B": "b2", "C": "c2" },
+        { "A": "a3", "B": "b3", "C": "c3" }
+      ]
+    },
+    {
+      "name": "test_1",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a2", "B": "b1", "C": "c1" },
+        { "A": "a3", "B": "b2", "C": "c2" }
+      ]
+    },
+    {
+      "name": "test_2",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C", "D"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1", "D": "d1" },
+        { "A": "a2", "B": "b2", "C": "c1", "D": "d1" },
+        { "A": "a2", "B": "b2", "C": "c2", "D": "d2" }
+      ]
+    },
+    {
+      "name": "test_3",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a1", "B": "b2", "C": "c3" },
+        { "A": "a2", "B": "b1", "C": "c2" }
+      ]
+    },
+    {
+      "name": "test_4",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a2", "B": "b2", "C": "c2" },
+        { "A": "a3", "B": "b3", "C": "c3" }
+      ]
+    },
+    {
+      "name": "test_5",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a1", "B": "b2", "C": "c2" },
+        { "A": "a2", "B": "b2", "C": "c2" }
+      ]
+    },
+    {
+      "name": "test_6",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C", "D"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1", "D": "d1" },
+        { "A": "a2", "B": "b2", "C": "c2", "D": "d2" },
+        { "A": "a3", "B": "b3", "C": "c3", "D": "d3" }
+      ]
+    },
+    {
+      "name": "test_7",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a2", "B": "b2", "C": "c2" },
+        { "A": "a3", "B": "b3", "C": "c3" }
+      ]
+    },
+    {
+      "name": "test_8",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a1", "B": "b1", "C": "c2" },
+        { "A": "a2", "B": "b2", "C": "c3" }
+      ]
+    },
+    {
+      "name": "test_9",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C", "D"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1", "D": "d1" },
+        { "A": "a1", "B": "b2", "C": "c2", "D": "d2" },
+        { "A": "a2", "B": "b2", "C": "c2", "D": "d2" }
+      ]
+    },
+    {
+      "name": "test_10",
+      "input": {
+        "relationName": "R",
+        "attributes": ["A", "B", "C"]
+      },
+      "sample_data": [
+        { "A": "a1", "B": "b1", "C": "c1" },
+        { "A": "a2", "B": "b2", "C": "c2" },
+        { "A": "a3", "B": "b3", "C": "c3" }
+      ]
+    }
+  ]
+}
+
+
